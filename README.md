@@ -17,5 +17,5 @@ The following environment variables are parsed and used at the moment
 
 ## Example
 ```bash
-docker run  -dt -p 8080:80 -v /home/data/:/data -e URL_HOST=http://10.11.12.13:8080/ -e ADMIN_PW=pass1234 twiki
+docker run  -dt -p 8080:80 -v /home/data/:/data -e URL_HOST=http://10.11.12.13:8080/ -e ADMIN_PW=pass1234 heradon/twiki
 ```

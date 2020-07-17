@@ -4,7 +4,7 @@ MAINTAINER Thomas Berger <th.berger@it.piratenpartei.de>
 
 RUN export DEBIAN_FRONTEND=noninteractive && apt-get update && apt-get -y dist-upgrade && apt-get -y install apache2 rcs diffutils zip cron make gcc g++ pkg-config libssl-dev
 
-ADD http://sourceforge.net/projects/twiki/files/TWiki%20for%20all%20Platforms/TWiki-6.1.0/TWiki-6.1.0.tgz/download ./TWiki-6.1.0.tgz
+ADD https://downloads.sourceforge.net/project/twiki/TWiki%20for%20all%20Platforms/TWiki-6.1.0/TWiki-6.1.0.tgz?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Ftwiki%2Ffiles%2FTWiki%2520for%2520all%2520Platforms%2FTWiki-6.1.0%2FTWiki-6.1.0.tgz%2Fdownload&ts=1594963831 ./TWiki-6.1.0.tgz
 RUN mkdir -p /var/www && tar xfv TWiki-6.1.0.tgz -C /var/www && rm TWiki-6.1.0.tgz
 
 ADD perl/cpanfile /tmp/cpanfile
